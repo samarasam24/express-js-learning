@@ -9,7 +9,9 @@ app.get('/',(req,res) => {
 });
 
 app.get('/home',(req,res) => {
-    res.render('index');
+    res.render('index',{
+        badWord:'Poda pu***'   
+    });
 });
 
 app.listen(3000);

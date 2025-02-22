@@ -8,5 +8,9 @@
 <body bgcolor="#f0f0f0">
     <h1 align="center">Hi Buddy</h1>
     <p align="center">Welcome to the Homepage</p>
+    <div id="printer" style="display: none;">  <%= badWord %> </div>
+    <button onclick="(() => {
+        document.getElementById('printer').style.display == 'block' ? document.getElementById('printer').style.display = 'none' : document.getElementById('printer').style.display = 'block'
+    })()">click me</button>
 </body>
 </html>
